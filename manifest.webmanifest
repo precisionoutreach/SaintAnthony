@@ -1,0 +1,22 @@
+{
+  "name": "St. Anthony the Great Orthodox Church",
+  "short_name": "St. Anthony",
+  "description": "The parish app of St. Anthony the Great Orthodox Church in Spring, TX — service times, online giving, prayer requests, and the liturgical year.",
+  "id": "stanthony-parish-app",
+  "start_url": "./index.html?source=pwa",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#faf6ec",
+  "theme_color": "#1a2440",
+  "icons": [
+    { "src": "./assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "./assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "./assets/icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Give & tithe", "url": "./give.html" },
+    { "name": "Prayer request", "url": "./connect.html#prayer" },
+    { "name": "Service times", "url": "./services.html" }
+  ]
+}
