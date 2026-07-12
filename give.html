@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Give &amp; Tithe — St. Anthony the Great Orthodox Church</title>
+<meta name="description" content="Support the ministry of St. Anthony the Great Orthodox Church in Spring, TX. Give your tithe or a one-time gift securely online with PayPal, or by check, or in person.">
+<meta name="theme-color" content="#1a2440">
+<meta property="og:image" content="https://www.stanthonythegreat.org/assets/img/church-hero.jpg">
+<link rel="icon" href="./favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="./assets/icons/apple-touch-icon.png">
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="stylesheet" href="./assets/css/main.css">
+<script src="./assets/js/config.js" defer></script>
+<script src="./assets/js/liturgical.js" defer></script>
+<script src="./assets/js/main.js" defer></script>
+<script src="./assets/js/give.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="./index.html">
+      <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
+        <rect width="64" height="64" rx="14" fill="#1a2440"/>
+        <g stroke="#d4af6a" stroke-width="4.5" stroke-linecap="round" fill="none">
+          <path d="M32 9v46"/><path d="M25 17h14"/><path d="M17 27h30"/><path d="M25 38l14 8"/>
+        </g>
+      </svg>
+      <span>
+        <span class="brand-name">St. Anthony the Great</span>
+        <span class="brand-sub">Orthodox Church · Spring, TX</span>
+      </span>
+    </a>
+    <nav class="top-nav" aria-label="Primary">
+      <a href="./index.html">Home</a>
+      <a href="./visit.html">Visit</a>
+      <a href="./about.html">About</a>
+      <a href="./services.html">Services</a>
+      <a href="./connect.html">Connect</a>
+      <a class="nav-give" href="./give.html" aria-current="page">Give</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero page-hero">
+    <div class="container hero-inner">
+      <p class="eyebrow">Giving &amp; stewardship</p>
+      <h1>Give with a grateful heart.</h1>
+      <p class="lede">“God loves a cheerful giver” (2&nbsp;Cor. 9:7). Your tithes and offerings keep the lamps lit, the doors open, and the ministry of St. Anthony’s alive in north Houston.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container grid grid-2" style="align-items:start">
+
+      <!-- ============ GIVING CARD ============ -->
+      <div class="card" style="border-top:4px solid var(--accent)">
+        <h2 style="font-size:1.5rem; margin-bottom:.3em">Give online</h2>
+        <p class="muted small">Takes about a minute. You’ll finish securely on PayPal — with a PayPal account <em>or</em> any debit/credit card.</p>
+
+        <label class="field" for="fund">
+          <span>Designate my gift to</span>
+          <select id="fund"></select>
+        </label>
+        <p class="small muted" id="fund-note" style="margin-top:-.5rem"></p>
+
+        <fieldset style="border:0; padding:0; margin:0 0 1rem">
+          <legend class="small" style="font-weight:700; color:var(--ink-soft); margin-bottom:.4rem">Amount</legend>
+          <div class="amount-grid" id="amounts">
+            <div class="amount-custom">
+              <span class="cur" aria-hidden="true">$</span>
+              <input id="custom-amount" type="number" inputmode="decimal" min="1" max="25000" step="0.01" placeholder="Other amount" aria-label="Custom amount in dollars">
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset style="border:0; padding:0; margin:0 0 1.2rem">
+          <legend class="small" style="font-weight:700; color:var(--ink-soft); margin-bottom:.4rem">Frequency</legend>
+          <div class="seg" id="freq">
+            <button type="button" data-freq="once" aria-pressed="true">One-time</button>
+            <button type="button" data-freq="monthly" aria-pressed="false">Monthly tithe</button>
+          </div>
+        </fieldset>
+
+        <p class="small" style="font-weight:700; color:var(--ink-soft); margin-bottom:.5rem">Your gift: <span id="give-summary" style="color:var(--accent-strong)"></span></p>
+
+        <a id="give-btn" class="btn btn-primary btn-lg btn-block" href="#" rel="noopener">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 2v13"/><path d="m7 8 5-5 5 5"/><path d="M4 21h16"/></svg>
+          Give with PayPal
+        </a>
+
+        <p class="notice" id="monthly-hint" hidden style="margin-top:.9rem">
+          For a monthly tithe, tick <strong>“Make this a monthly donation”</strong> on the PayPal page — PayPal will handle it automatically each month, and you can cancel anytime from your PayPal account.
+        </p>
+        <p class="notice" id="fund-hint" hidden style="margin-top:.9rem">
+          Please type your chosen fund in PayPal’s <strong>“Write a note”</strong> box so the office designates your gift correctly.
+        </p>
+        <div class="notice" id="give-setup-note" hidden style="margin-top:.9rem">
+          <strong>Online giving is nearly ready.</strong> The parish’s PayPal account just needs to be connected (a one-line setting — see the site guide). Meanwhile, the ways below work today, and the office is happy to help: <a data-phone href="tel:+12812516000">(281) 251-6000</a>.
+        </div>
+
+        <p class="small muted" style="margin:1rem 0 0; display:flex; gap:.45rem; align-items:center">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" style="flex:none"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+          Payments are processed by PayPal. Your card details never touch this website.
+        </p>
+      </div>
+
+      <!-- ============ OTHER WAYS ============ -->
+      <div class="stack">
+        <div class="card">
+          <h3>Other ways to give</h3>
+          <table class="sched">
+            <tbody>
+              <tr>
+                <th scope="row">In person</th>
+                <td>The offering basket at any service — cash or check.</td>
+              </tr>
+              <tr>
+                <th scope="row">By mail</th>
+                <td>Checks payable to <strong id="checks-payable">St. Anthony the Great Orthodox Church</strong><br>
+                <span class="muted small">7202 FM 2920, Spring, TX 77379</span></td>
+              </tr>
+              <tr id="way-zelle">
+                <th scope="row">Zelle</th>
+                <td><span data-value></span></td>
+              </tr>
+              <tr id="way-venmo">
+                <th scope="row">Venmo</th>
+                <td><span data-value></span></td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="small muted" style="margin:.8rem 0 0">For stock gifts, memorials, estate giving, or questions about your giving statement, contact the parish office: <a data-phone href="tel:+12812516000">(281) 251-6000</a>.</p>
+        </div>
+
+        <div class="card card-flat" style="background:var(--surface-2)">
+          <h3>Where your gift goes</h3>
+          <p class="muted small" style="margin:0">Worship and the sacraments · clergy and staff · our building and grounds · Church School and youth · hospitality and coffee hour · care for those in need. The parish council stewards every dollar, and giving statements are provided for tax purposes.</p>
+        </div>
+
+        <div class="card card-flat" style="background:var(--surface-2)">
+          <h3>A word on the tithe</h3>
+          <p class="muted small" style="margin:0">Orthodox Christians have always given the first portion — not the leftovers — back to God. Whether you begin with a tithe (10%) or a first step toward it, what matters is that it’s <em>first</em>, <em>proportional</em>, and <em>joyful</em>.</p>
+        </div>
+
+        <blockquote class="saying">
+          “Honor the Lord with your substance and with the first fruits of all your produce.”
+          <footer>— Proverbs 3:9</footer>
+        </blockquote>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <h4>St. Anthony the Great Orthodox Christian Church</h4>
+      <p style="margin:0">7202 FM 2920, Spring, TX 77379<br>
+      <a data-phone href="tel:+12812516000">(281) 251-6000</a></p>
+      <div class="social-row">
+        <a href="https://www.facebook.com/stanthonyspringtx/" rel="noopener" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7h2.4l.4-3h-2.8V9.1c0-.9.2-1.5 1.5-1.5h1.4V4.9c-.3 0-1.2-.1-2.2-.1-2.2 0-3.7 1.3-3.7 3.8V11H8v3h2.5v7z"/></svg>
+        </a>
+        <a href="https://www.youtube.com/@stanthonythegreat7202" rel="noopener" aria-label="YouTube">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.6 7.2a2.6 2.6 0 0 0-1.8-1.9C18.2 5 12 5 12 5s-6.2 0-7.8.3a2.6 2.6 0 0 0-1.8 1.9A27 27 0 0 0 2 12a27 27 0 0 0 .4 4.8 2.6 2.6 0 0 0 1.8 1.9c1.6.3 7.8.3 7.8.3s6.2 0 7.8-.3a2.6 2.6 0 0 0 1.8-1.9A27 27 0 0 0 22 12a27 27 0 0 0-.4-4.8zM10 15.2V8.8L15.5 12z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div>
+      <h4>Worship</h4>
+      <ul class="footer-links">
+        <li>Great Vespers — Sat 5:00 PM</li>
+        <li>Orthros — Sun 9:00 AM</li>
+        <li>Divine Liturgy — Sun 10:00 AM</li>
+        <li><a href="./services.html">Full schedule &amp; feasts</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Parish</h4>
+      <ul class="footer-links">
+        <li><a href="./visit.html">Plan your visit</a></li>
+        <li><a href="./about.html">About &amp; our patron</a></li>
+        <li><a href="./give.html">Give &amp; tithe</a></li>
+        <li><a href="./connect.html">Connect &amp; prayer requests</a></li>
+        <li><a href="https://www.antiochian.org/" rel="noopener">Antiochian Archdiocese</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-base">
+    <div class="container">© <span data-year>2026</span> St. Anthony the Great Orthodox Christian Church · Antiochian Orthodox Christian Archdiocese of North America, Diocese of Wichita and Mid-America</div>
+  </div>
+</footer>
+
+<nav class="tabbar" aria-label="App navigation">
+  <a href="./index.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/></svg>
+    Home
+  </a>
+  <a href="./visit.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+    Visit
+  </a>
+  <a href="./services.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+    Services
+  </a>
+  <a href="./give.html" aria-current="page">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21.2l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+    Give
+  </a>
+  <a href="./connect.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5c-1.5 0-3-.4-4.2-1.1L3 20l1.1-5.3A8.5 8.5 0 1 1 21 11.5z"/></svg>
+    Connect
+  </a>
+</nav>
+
+</body>
+</html>
