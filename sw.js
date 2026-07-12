@@ -1,7 +1,7 @@
 /* Service worker — offline-capable parish app.
    Bump VERSION whenever site files change; old caches are cleaned up. */
 
-const VERSION = "stanthony-v1.0.0";
+const VERSION = "stanthony-v1.0.1";
 const PRECACHE = [
   "./",
   "./index.html",
@@ -20,6 +20,7 @@ const PRECACHE = [
   "./assets/js/give.js",
   "./assets/js/connect.js",
   "./assets/services.ics",
+  "./assets/img/church-hero.jpg",
   "./assets/icons/icon-192.png",
   "./assets/icons/icon-512.png",
   "./assets/icons/maskable-512.png",
